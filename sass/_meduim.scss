@@ -1,0 +1,20 @@
+.meduim-6 {
+  width: 50%;
+}
+.meduim-4 {
+  width: 33.333333%;
+}
+
+nav {
+  button {
+    display: none;
+  }
+
+  ul {
+    display: block;
+  }
+  ul li {
+    float: left;
+    width: 25%;
+  }
+}
