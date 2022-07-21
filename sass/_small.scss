@@ -15,11 +15,11 @@ body {
   font-weight: 300;
 }
 
-/* FlexBox*/
-
+/*CSS Grid*/
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
 }
 .column {
   padding: 0 2vw;
@@ -27,15 +27,36 @@ body {
 }
 
 .small-12 {
-  flex-basis: 100%;
+  grid-column: span 12;
 }
 .small-6 {
-  flex-basis: 50%;
+ grid-column: span 6;
 }
 .limited {
   max-width: 1140px;
   margin: 0 auto;
 }
+/* FlexBox*/
+
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .column {
+//   padding: 0 2vw;
+//   margin: 0 0 0.75rem 0;
+// }
+
+// .small-12 {
+//   flex-basis: 100%;
+// }
+// .small-6 {
+//   flex-basis: 50%;
+// }
+// .limited {
+//   max-width: 1140px;
+//   margin: 0 auto;
+// }
 
 /* Grid */
 

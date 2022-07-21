@@ -323,10 +323,10 @@ body {
   font-weight: 300;
 }
 
-/* FlexBox*/
+/*CSS Grid*/
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .column {
@@ -335,11 +335,11 @@ body {
 }
 
 .small-12 {
-  flex-basis: 100%;
+  grid-column: span 12;
 }
 
 .small-6 {
-  flex-basis: 50%;
+  grid-column: span 6;
 }
 
 .limited {
@@ -347,6 +347,7 @@ body {
   margin: 0 auto;
 }
 
+/* FlexBox*/
 /* Grid */
 /* Header Rules */
 header {
@@ -470,10 +471,10 @@ footer h2 {
 
 @media only screen and (min-width: 768px) {
   .medium-6 {
-    flex-basis: 50%;
+    grid-column: span 6;
   }
   .medium-4 {
-    flex-basis: 33.333333%;
+    grid-column: span 4;
   }
   nav button {
     display: none;
@@ -488,7 +489,7 @@ footer h2 {
 }
 @media only screen and (min-width: 1024px) {
   .large-3 {
-    flex-basis: 25%;
+    grid-column: span 3;
   }
   nav ul {
     margin-left: 2vw;
